@@ -11,7 +11,7 @@ const MyComponent = () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>My Title</title>
-      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'></link>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"></link>
     </Helmet>
     <span style={{ color: 'red' }}> Hello World </span>
   </div>
