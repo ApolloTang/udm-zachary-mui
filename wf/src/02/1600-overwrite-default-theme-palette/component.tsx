@@ -36,7 +36,7 @@ export default function Comp() {
     <div>
       <ElevationScroll>
         <AppBar
-          color="secondary" /* <--- use overide's secondary */
+          color="secondary" /* <--- use overwritten secondary */
         >
           <Toolbar>Foo</Toolbar>
         </AppBar>

@@ -2,10 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {Helmet} from 'react-helmet'
 import { ThemeProvider } from '@material-ui/core/styles'
+
 import { theme } from './theme'
-
 import Comp from './component'
-
 
 const container = document.createElement('div')
 container.id = 'app'
