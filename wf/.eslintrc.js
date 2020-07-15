@@ -73,7 +73,7 @@ module.exports = {
         "@typescript-eslint/class-name-casing": ["off", {
           "allowUnderscorePrefix":true
         }],
-        "@typescript-eslint/ban-ts-ignore": "off"
+        "@typescript-eslint/ban-ts-ignore": "off",
         "@typescript-eslint/no-empty-function": "off",
         "@typescript-eslint/no-misused-promises": [ "error", { "checksVoidReturn": false } ]
       }
