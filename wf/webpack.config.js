@@ -49,7 +49,11 @@ module.exports = ({pathToEntryFile}) => {
             { loader: 'babel-loader' }
           ],
           exclude: /node_modules/  // <---- very important
-        }
+        },
+        {
+          test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$/,
+          loader: 'file-loader?name=./imgs/[name].[hash].[ext]',
+        },
       ]
     },
     plugins: [
