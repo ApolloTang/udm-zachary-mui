@@ -22,19 +22,16 @@ function ElevationScroll(props: Props) {
   return React.cloneElement(children, propsToPassToChildren)
 }
 
-const useStyles = makeStyles(
-  (theme:Theme) => {
-
-    const cssInJsProperties = {
-      ...theme.mixins.toolbar
-      // height of <MUI.Toolbar> is available in the above object
-    }
-
-    const out = { customNameInMakeStylesClassName: cssInJsProperties }
-    console.log('xxxx: ', out)
-    return out
+const useStyles = makeStyles( (theme:Theme) => {
+  const cssInJsProperties = {
+    ...theme.mixins.toolbar
+   // height of <MUI.Toolbar> is available in the injected theme object
   }
-)
+
+  const out = { customNameInMakeStylesClassName: cssInJsProperties }
+  console.log('xxxx' , JSON.stringify(out, null, 2))
+  return out
+})
 
 export default function Comp() {
   const classes = useStyles()
